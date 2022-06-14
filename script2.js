@@ -6,9 +6,8 @@ $(document).ready(function(){
 });
 */
 $(function(){
-  $("#Cal").hide("fast");
+  ¢("#Cal").slideDown("slow");
   $("#res").hide("fast");
-  $("#Cal").slideDown(2000);
   $("#calculate").click(function(){
     $("#res").show(2000);
   });
