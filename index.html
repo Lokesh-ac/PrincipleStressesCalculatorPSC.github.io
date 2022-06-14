@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PS Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script2.js"></script>
+</head>
+
+<body>
+<center>
+
+   <div id="Cal">
+     <center>
+       <div class="mainhead">
+         <h1><b><i>Principal stresses calculator</i></b></h1>
+       </div>
+        <form>
+          <div class="lab1">
+            <label for="xstress">1. Enter the normal stress acting on x-axis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+            <input id="xstress" type="number">
+          </div>
+          <div class="lab2">
+            <label for="ystress">2. Enter the normal stress acting on y-axis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+            <input id="ystress" type="number">
+          </div>
+         <div class="lab3">
+           <label for="sstress" > 3. Enter the shear stress acting on a material &nbsp;&nbsp;&nbsp;:</label>
+           <input id="sstress" type="number">
+         </div>
+        <div class="refreshbtn">
+            <input type="button" id="refresh" onclick="refreshOf()" value="Refresh">
+        </div>
+        <div class="enter" >
+            <input type="button" id="calculate" onclick="calculateStress()" value="Calculate">
+        </div>
+        <div id="res">
+          <output id="reslab"></output>
+        </div>
+        </form>
+     </center>
+   </div>
+</center>
+<script src="script.js"></script>
+</body>
+
+</html>
